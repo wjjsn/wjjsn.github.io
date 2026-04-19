@@ -24,7 +24,7 @@
 ```
 其中"cpuFrequency"为系统时钟频率
 # 为MCU启用SWO引脚
-![[../../附件文件夹/Pasted image 20250705151006.png]]
+![](/posts/assets/Cortex_Debug/Pasted_image_20250705151006.png)
 # 覆盖`_write`函数
 ```c
 int _write(int file, char *ptr, int len)

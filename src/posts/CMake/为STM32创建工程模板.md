@@ -1,7 +1,7 @@
 先安装Cmake Tools和Cortex Debug和JLink
 # 使用cubemx生成Cmake工程
 # 配置编译器路径
-打开VSC选择一个构建配置后如果配置失败说明编译器没有添加到环境路径中，这时候需要手动添加![[../../附件文件夹/Pasted image 20250707140553.png]]
+打开VSC选择一个构建配置后如果配置失败说明编译器没有添加到环境路径中，这时候需要手动添加![](/posts/assets/CMake/Pasted_image_20250707140553.png)
 打开./gcc-arm-none-eabi.cmake对编译器路径进行设置，指定绝对路径
 ```cmake
 set(TOOLCHAIN_PREFIX                arm-none-eabi-)

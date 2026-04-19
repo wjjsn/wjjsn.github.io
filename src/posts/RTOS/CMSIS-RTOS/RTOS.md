@@ -36,7 +36,7 @@ osStatus_t osSemaphoreAcquire (osSemaphoreId_t semaphore_id, uint32_t timeout);
 3. 支持递归获取：在一个任务中可以进行多次获取，在结束时也进行同样次数的释放即可
 除了这几点之外，互斥锁和二值信号量还是很像的
 ## 哪些API不能在中断中调用
-![[../../../附件文件夹/Pasted image 20250518105930.png]]
+![](/posts/assets/RTOS/CMSIS-RTOS/Pasted_image_20250518105930.png)
 当中断中调用了允许使用的API时，必须确保这个中断的优先级在RTOS可管理的范围内。因为在中断中调用RTOS的API时，内核会把不在掌控范围内的中断全部临时屏蔽以确保操作的安全。5-15
 
 下面这些API不能在中断中使用
