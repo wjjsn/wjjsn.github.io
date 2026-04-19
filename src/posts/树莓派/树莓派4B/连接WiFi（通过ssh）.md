@@ -1,3 +1,9 @@
+---
+lang: zh-CN
+title: 树莓派4B通过SSH连接WiFi详细教程
+description: 详解在无显示器情况下，如何通过命令行配置WiFi连接，包括wpa_supplicant配置、rfkill解锁、dhclient获取IP等步骤，并提供自动化脚本。
+---
+
 # 生成wifi配置文件
 `wpa_passphrase "你的Wi-Fi名称" "你的Wi-Fi密码" | sudo tee -a /etc/wpa_supplicant/wpa_supplicant.conf
 `

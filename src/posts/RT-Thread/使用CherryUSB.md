@@ -1,3 +1,9 @@
+---
+lang: zh-CN
+title: RT-Thread适配CherryUSB驱动指南
+description: 详细讲解如何在RT-Thread系统中适配CherryUSB，包括USB低层初始化函数、GPIO引脚配置、DWC2 FS寄存器基地址设置等关键步骤。
+---
+
 # 适配
 如果BSP默认不支持而是使用的旧版的USB框架需要进行手动适配，主要实现三个函数和`usb_config.h`
 ```c

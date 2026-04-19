@@ -1,3 +1,8 @@
+---
+lang: zh-CN
+title: VS Code远程开发
+description: 使用VS Code Remote-SSH进行远程开发配置
+---
 # 安装插件
 ![](/posts/assets/开发_/Pasted_image_20250622151644.png)
 安装Remote-SSH，其他的根据需要进行安装

@@ -1,3 +1,8 @@
+---
+lang: zh-CN
+title: clangd作为语言服务器
+description: 配置clangd作为C/C++语言服务器的设置方法
+---
 不使用C/C++主要是因为有一点慢，有时候会找不到函数定义。不过clangd对交叉编译的支持还不够好。
 # 安装LLVM
 在github的发布页找，安装时记得添加到环境变量

@@ -1,3 +1,8 @@
+---
+lang: zh-CN
+title: STM32 CMake工程模板创建指南
+description: 详细讲解如何为STM32使用CubeMX生成CMake工程模板，配置gcc-arm-none-eabi编译器路径，通过Cortex Debug和JLink进行烧录和调试的完整教程。
+---
 先安装Cmake Tools和Cortex Debug和JLink
 # 使用cubemx生成Cmake工程
 # 配置编译器路径

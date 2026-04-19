@@ -1,3 +1,9 @@
+---
+lang: zh-CN
+title: GCC vs Clang 嵌入式编译器内存占用对比分析
+description: 对比 GCC 和 Clang 编译器在 ARM 嵌入式开发中的内存占用情况，包括不开优化和开启 -Oz 优化时的 RAM 和 FLASH 使用对比。
+---
+
 # 版本
 
 ```powershell

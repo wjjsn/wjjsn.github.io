@@ -1,4 +1,10 @@
-## 什么是分包[](https://cherryusb.readthedocs.io/zh-cn/latest/usb/usb_ext.html#id1 "Link to this heading")
+---
+lang: zh-CN
+title: CherryUSB USB知识点扩展 - 分包、短包与ZLP详解
+description: 深入讲解USB协议中的分包、短包和ZLP（零长度数据包）概念，帮助开发者理解USB数据传输机制、中断完成判断标准，提升CherryUSB开发能力。
+---
+
+## 什么是分包
 
 由于 USB 协议中规定了每个包的最大长度，所以当我们发送的数据长度超过了最大包长度时，就需要分包发送，这就是分包。比如 ep mps 为 64，数据长度为 129，则 USB 会按照 64 + 64 + 1 的形式传输。 而对于 USB IP 来说，分包分为软件分包和硬件分包，软件分包就是用户代码自行分包，这种 ip 一般都使用 FIFO 来进行，因为 FIFO 深度是有限的；第二种 则是使用硬件分包，这种 USB IP 一般带 DMA 或者描述符 DMA 功能，那么这种 IP 的效率无疑是最高的，cherryusb 中充分利用了这点，使得 USB 速度能够达到最高。
 

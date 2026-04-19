@@ -1,3 +1,9 @@
+---
+lang: zh-CN
+title: Azure RTOS GUIX 移植笔记
+description: Azure RTOS GUIX嵌入式GUI移植笔记，记录GUIX的移植过程与配置方法。
+---
+
 垃圾玩意，纯纯老古董，设计界面也不好用，还是用lvgl吧
 # 移植
 这是从github下载下来的库![](/posts/assets/RTOS/Azure_RTOS/Pasted_image_20250528113350.png)重点关注common和ports这两个文件夹

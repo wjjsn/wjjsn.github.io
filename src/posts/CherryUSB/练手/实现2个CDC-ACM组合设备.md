@@ -1,3 +1,9 @@
+---
+lang: zh-CN
+title: CherryUSB实现双CDC-ACM复合设备教程
+description: 详细讲解如何在CherryUSB中实现两个CDC-ACM组合设备，包含完整的设备描述符配置、接口数量匹配要点以及源码分析。
+---
+
 # 准备环境
 1. 确认在协议栈中添加了CDC类
 2. 可以使用[[../基本例程/CDC_ACM和MSC|该例程]]作为模板修改

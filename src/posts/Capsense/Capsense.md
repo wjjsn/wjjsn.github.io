@@ -1,3 +1,9 @@
+---
+lang: zh-CN
+title: Capsense电容式触摸感应设计指南 - 信噪比优化与PCB布局
+description: 深入了解Capsense电容式触摸感应技术，包括信噪比(SNR)优化、smartsense调教方法以及PCB layout设计注意事项。学习如何设计高质量的触摸感应系统。
+---
+
 # 几个比较重要的概念
 ## 信噪比
 ![](/posts/assets/Capsense/Pasted_image_20250520074243.png)

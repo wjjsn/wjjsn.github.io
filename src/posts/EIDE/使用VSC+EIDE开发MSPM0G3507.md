@@ -1,3 +1,8 @@
+---
+lang: zh-CN
+title: 使用VSC+EIDE开发MSPM0G3507详细教程
+description: 本文详细介绍如何在Visual Studio Code中配合EIDE插件开发TI MSPM0G3507微控制器，涵盖SDK下载、工程创建、驱动配置及调试配置等完整流程。
+---
 # 下载工具和SDK
 1. TI System Configuration Tool
 2. 下载SDK![](/posts/assets/EIDE/Pasted_image_20250626143203.png)

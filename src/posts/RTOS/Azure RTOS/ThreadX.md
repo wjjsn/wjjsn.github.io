@@ -1,3 +1,9 @@
+---
+lang: zh-CN
+title: ThreadX 线程创建详解
+description: 详细讲解Azure RTOS ThreadX的线程创建方法，包括静态创建与动态创建的区别、线程优先级、抢占式调度等核心概念。
+---
+
 RTOS之间都是很像的，除了每个RTOS自己有的特性，别的（任务创建、信号量、互斥锁等）都是通用的
 
 # 特性

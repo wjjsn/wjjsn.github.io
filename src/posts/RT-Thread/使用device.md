@@ -1,3 +1,9 @@
+---
+lang: zh-CN
+title: RT-Thread device设备使用指南
+description: 详细介绍RT-Thread中device设备的查看、打开、读写操作，涵盖SPI、UART、SD卡等外设的使用方法，以及CherryUSB兼容注意事项。
+---
+
 在命令行中使用`list device`查看现有的设备，
 ```shell
 device           type         ref count

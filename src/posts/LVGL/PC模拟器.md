@@ -1,3 +1,9 @@
+---
+lang: zh-CN
+title: LVGL PC模拟器配置指南 - VS Code + SDL2 详细教程
+description: 详细讲解如何在Windows系统下使用VS Code配置LVGL PC模拟器，包括gcc/cmake环境配置、SDL2安装、LVGL源码下载和编译运行步骤。
+---
+
 使用VS Code进行模拟
 # 配置环境
 - gcc、cmake配置好后在命令行检查版本查看是否成功

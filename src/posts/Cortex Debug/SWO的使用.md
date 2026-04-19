@@ -1,3 +1,9 @@
+---
+lang: zh-CN
+title: SWO调试详解 - Cortex Debug高效调试方案
+description: 详细介绍ARM Cortex-M微控制器中SWO调试的工作原理、配置方法与实战技巧。涵盖SWO的优点分析、launch.json配置参数说明、ITM多通道使用指南，以及_write函数覆盖实现。适合嵌入式开发者学习Cortex Debug调试技巧。
+---
+
 # SWO的优缺点
 ## 优点
 1. 速度快，性能好

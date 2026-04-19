@@ -1,3 +1,9 @@
+---
+lang: zh-CN
+title: CherryUSB CDC_ACM与MSC复合设备开发详解
+description: 全面介绍CherryUSB CDC_ACM和MSC组合设备的开发，包含USB描述符配置、端点地址规则、回调函数注册机制以及完整的源码注释和详细解说。
+---
+
 # 例程源码
 可在github仓库下载
 ```c

@@ -1,3 +1,9 @@
+---
+lang: zh-CN
+title: CherryUSB标准HID键盘驱动开发指南
+description: 详细介绍CherryUSB标准HID键盘例程，包含完整的键盘报告描述符配置、端点设置、回调函数实现以及详细的宏定义说明。
+---
+
 # 例程源码
 已经对代码进行了部分修改，删去了未使用的代码，删去了CONFIG_USBDEV_ADVANCE_DESC部分外的代码，对config_descriptor进行了修改，改为了统一使用宏定义的版本
 ```c

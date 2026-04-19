@@ -1,3 +1,9 @@
+---
+lang: zh-CN
+title: MCU上C++内存占用分析：为什么嵌入式开发慎用C++
+description: 通过实际数据对比库函数、printf、std::cout、std::print 在 gcc/clang 编译器下的内存占用，揭示 C++ 标准库在资源受限的 MCU 环境中带来的巨大开销。
+---
+
 # gcc
 ---
 直接使用库函数输出

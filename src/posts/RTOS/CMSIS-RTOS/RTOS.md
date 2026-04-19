@@ -1,3 +1,9 @@
+---
+lang: zh-CN
+title: CMSIS-RTOS 信号量与互斥锁详解
+description: 深入解析CMSIS-RTOS中信号量与互斥锁的原理、使用方法及注意事项，包括二值信号量、计数信号量、优先级反转等核心概念。
+---
+
 # CMSIS-RTOS
 ## 信号量
 ### 信号量简介

@@ -1,3 +1,9 @@
+---
+lang: zh-CN
+title: 解决SSH每次输密码的问题 - 树莓派公钥认证配置
+description: 详细说明如何在Linux、macOS或Windows主机上生成SSH密钥对，并将公钥配置到树莓派，实现免密码登录的完整教程。
+---
+
 在主机执行
 ```powershell
 ssh-keygen -t ed25519

@@ -1,3 +1,8 @@
+---
+lang: zh-CN
+title: CMake Hello World工程创建教程
+description: 介绍CMake的安装方法、推荐的目录结构，以及如何编写最简CMakeLists.txt创建第一个CMake工程。
+---
 # 安装CMake
 `sudo apt install cmake`
 `cmake --version`
