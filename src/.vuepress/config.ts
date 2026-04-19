@@ -6,11 +6,8 @@ export default defineUserConfig({
   base: "/",
 
   lang: "zh-CN",
-  title: "博客演示",
-  description: "vuepress-theme-hope 的博客演示",
+  title: "嵌入式技术栈",
+  description: "嵌入式开发学习笔记，涵盖ARM、RTOS、驱动开发、工具链等",
 
   theme,
-
-  // 和 PWA 一起启用
-  // shouldPrefetch: false,
 });

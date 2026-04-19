@@ -1,1 +1,61 @@
-// place your custom styles here
+// 博客标题样式增强
+.hero .hero-title {
+  font-size: 3rem !important;
+  font-weight: 700;
+  background: linear-gradient(135deg, #3b9fe6 0%, #00d9ff 50%, #3b9fe6 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradient-shift 3s ease infinite;
+}
+
+@keyframes gradient-shift {
+  0%, 100% { background-position: 0% center; }
+  50% { background-position: 100% center; }
+}
+
+// 导航栏增强
+.navbar {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.9) !important;
+}
+
+// 侧边栏样式
+.sidebar > ul {
+  padding-left: 0;
+}
+
+// 文章卡片样式
+.theme-hope-content .blog-card {
+  border-radius: 12px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(59, 159, 230, 0.15);
+  }
+}
+
+// 代码块样式优化
+div[class*="language-"] {
+  border-radius: 8px;
+}
+
+// 引用块样式
+blockquote {
+  border-left: 4px solid #3b9fe6;
+  background: linear-gradient(to right, rgba(59, 159, 230, 0.05), transparent);
+}
+
+// 页脚样式
+.footer {
+  background: linear-gradient(to top, rgba(59, 159, 230, 0.05), transparent);
+}
+
+// 移动端适配
+@media (max-width: 719px) {
+  .navbar {
+    background: rgba(255, 255, 255, 0.95) !important;
+  }
+}
