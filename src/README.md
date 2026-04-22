@@ -41,7 +41,7 @@ projects:
     name: 学习笔记
     desc: 系统性的知识整理与经验总结
     link: /posts/
-footer: CC BY-NC-SA 4.0 | Copyright © 2024-present wjjsn
+footer: CC BY-NC-SA 4.0 | Copyright © 2026-present wjjsn
 ---
 
 # Welcome
