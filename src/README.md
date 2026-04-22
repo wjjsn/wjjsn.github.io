@@ -5,7 +5,7 @@ icon: house
 title: 首页
 heroImage: /assets/images/hero.png
 heroText: 欢迎来到wjjsn的博客
-tagline: 记录学习路上的点点滴滴，从嵌入式到软件开发，从工具链到系统架构
+tagline: AI时代依旧坚持纯手打的博客
 actions:
   - text: 开始阅读
     link: /posts/
