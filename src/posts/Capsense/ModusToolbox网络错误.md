@@ -1,6 +1,6 @@
 ---
 lang: zh-CN
-title: 解决英飞凌登录时提示Error: Failed to Login: 'Network Error occurred: 'ContentNotFoundError''的错误
+title: "解决英飞凌登录时提示Error: Failed to Login: 'Network Error occurred: 'ContentNotFoundError''的错误"
 description: 被英飞凌（Infineon）ModusToolbox 的在线安装和“土豆服务器”折腾到血压飙升？本文为你奉上全网最清爽的 ModusToolbox 离线安装避坑指南。内含官方离线包直达下载链接，并详细梳理了 CAPSENSE 等核心必装依赖项，带你彻底摆脱登录卡死、密码过期和网络报错的折磨，10分钟完成环境搭建！
 ---
 
