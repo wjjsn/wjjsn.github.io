@@ -76,7 +76,16 @@ export default hopeTheme({
 
   plugins: {
     blog: true,
-
+    comment: {
+      provider: "Giscus",
+      repo: "wjjsn/wjjsn.github.io",       // 你的 GitHub 仓库
+      repoId: "R_kgDOQfwz7A",                // 填入你在 giscus 官网生成的 Repo ID
+      category: "Announcements",           // 你的讨论区分类，推荐 Announcements
+      categoryId: "DIC_kwDOQfwz7M4C8_rc",        // 填入你在 giscus 官网生成的 Category ID
+      mapping: "pathname",                 // 默认用路径映射
+      lazyLoading: true,                   // 懒加载
+      reactionsEnabled: true,              // 开启点赞表情
+    },
     components: {
       components: ["Badge", "VPCard"],
     },
