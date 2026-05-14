@@ -24,7 +24,7 @@ export default hopeTheme({
   displayFooter: true,
 
   blog: {
-    description: "嵌入式技术学习笔记",
+    description: "踩坑折腾捣鼓瞎记录喵",
     intro: "/intro.html",
     medias: {
       GitHub: "https://github.com/wjjsn",
