@@ -4,7 +4,7 @@ title: "解决英飞凌登录时提示Error: Failed to Login: 'Network Error occ
 description: 被英飞凌（Infineon）ModusToolbox 的在线安装和“土豆服务器”折腾到血压飙升？本文为你奉上全网最清爽的 ModusToolbox 离线安装避坑指南。内含官方离线包直达下载链接，并详细梳理了 CAPSENSE 等核心必装依赖项，带你彻底摆脱登录卡死、密码过期和网络报错的折磨，10分钟完成环境搭建！
 ---
 
-# 吐槽
+## 吐槽
 
 傻福英飞凌服务器是土豆做的吗？不挂梯子进不去，挂梯子了也进不去，开全局开tun了还是进不去，真的无语了。
 
@@ -12,9 +12,9 @@ description: 被英飞凌（Infineon）ModusToolbox 的在线安装和“土豆�
 
 上论坛看了好几篇相同问题的回复都说是服务器在检修，让用户把日志发过来，他们排查。。。我发你***，我急着用呢！我还来帮你排查，搞笑。
 
-# 解决方案
+## 解决方案
 
-## 换成离线版安装，尝试下面的网址：
+### 换成离线版安装，尝试下面的网址：
 
 https://softwaretools.infineon.com/tools/com.ifx.tb.tool.modustoolbox
 
@@ -27,5 +27,10 @@ https://softwaretools.infineon.com/tools/com.ifx.tb.tool.modustoolboxofflinecont
 
 ![](/posts/assets/ModusToolbox网络错误.png)
 
-`ModusToolbox™ CAPSENSE™ and Multi-Sense Pack`必须要装，否则很多项目会编译失败。剩下的是编译器、烧录程序、IDE啥的，看自己喜好，可装可不装
+`ModusToolbox™ CAPSENSE™ and Multi-Sense Pack`必须要装，否则很多项目会编译失败（已踩坑：[为什么装了这个库也编译失败](为什么装了CAPSENSE库也编译失败.md)）。剩下的是编译器、烧录程序、IDE啥的，看自己喜好，可装可不装
 
+## 继续阅读
+
+- 我错了，[ModusToolbox™ Programming tools 最好还是要装的](Programming-tools最好还是要装的.md)（已踩坑）
+- [重新打开已经创建好的工程进行修改配置](重新打开已经创建好的工程进行修改配置.md)
+- [CY_USING_HAL是什么？为什么我的代码生成器没有生成这个宏？。这两种库有什么区别吗？](CY_USING_HAL是什么？为什么我的代码生成器没有生成这个宏？。这两种库有什么区别吗？.md)
