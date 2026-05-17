@@ -1,4 +1,10 @@
-说实话，在ModusToolbox中，我没有找到用串口通信的例程。只找到EZI2C的，但是这个例程里的文档又明确写了“The CAPSENSE™ tuner application works with the EZI2C and UART communication interfaces.”，说明是支持uart的，但是找了一圈没看到例程。
+---
+lang: zh-CN
+title: "用串口进行Capsense Tuner通信"
+description: "详解如何通过UART接口实现PSoC 4与Capsense Tuner的通信，突破官方例程的限制，包含完整的代码示例和配置步骤，让你实现真正的实时调参功能。"
+---
+
+说实话，在ModusToolbox中，我没有找到用串口通信的例程。只找到EZI2C的，但是这个例程里的文档又明确写了"The CAPSENSE™ tuner application works with the EZI2C and UART communication interfaces."，说明是支持uart的，但是找了一圈没看到例程。
 
 最后在github上找到[我想要的东西](https://github.com/Infineon/mtb-example-psoc4-msclp-tuner-interfaces-i2c-rtt-uart)了
 
@@ -222,7 +228,7 @@ static void capsense_isr(void) {
  * Function Name: initialize_capsense_tuner
  ********************************************************************************
  * Summary:
- * - EZI2C module to communicate with the CapSense Tuner tool.
+ *  - EZI2C module to communicate with the CapSense Tuner tool.
  *
  *******************************************************************************/
  #define CYBSP_UART_HW UART_0_HW
@@ -340,8 +346,8 @@ void initialize_uart_tuner(void) {
  * Function Name: measure_sensor_cp
  ********************************************************************************
  * Summary:
- *  Measures the self capacitance of the sensor electrode (Cp) in Femto Farad
- * and stores its value in the variable sensor_cp.
+ *  Measures the self capacitance of sensor electrode (Cp) in Femto Farad
+ *  and stores its value in the variable sensor_cp.
  *
  *******************************************************************************/
 static void measure_sensor_cp(void) {

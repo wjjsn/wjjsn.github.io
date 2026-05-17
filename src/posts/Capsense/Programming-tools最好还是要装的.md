@@ -1,15 +1,18 @@
-
+---
+lang: zh-CN
+title: "ModusToolbox Programming tools最好还是要装的"
+description: "JLink烧录大固件失败？通过实际踩坑经历详细记录问题排查过程，最终发现使用OpenOCD替代方案可以完美解决PSoC 4大固件烧录失败的问题。附完整日志和解决方案。"
+---
 
 ## 情况
 
 非常非常神秘。。。我记得我之前用jlink烧这个芯片是完全正常的（也可能是因为安装的jlink的版本不一样），现在的版本是9.32，烧点灯这种是完全正常的，但是一旦固件的体积变大，怎么烧都烧不进去，报错！
 
-
-![jlink烧录psoc报错](jlink烧录psoc报错.png)
+![JLink烧录PSOC报错截图，显示固件烧录失败](/posts/assets/Capsense/jlink烧录psoc报错.png)
 
 我用jflash测试速度，看看这个芯片到底能承受多大的速度，但是直接失败
 
-![用jflash测试速度失败](用jflash测试速度失败.png)
+![JFlash速度测试失败截图](/posts/assets/Capsense/用jflash测试速度失败.png)
 
 尝试了下面的方案，均无效：
 - 换成独立供电而不是使用jlink供电
@@ -62,25 +65,25 @@ Info : gdb port disabled
 Info : starting gdb server for psoc4.cpu on 50000
 Info : Listening on port 50000 for gdb connections
 Info : accepting 'gdb' connection on tcp/50000
-[psoc4.cpu] halted due to debug-request, current mode: Thread 
+[psoc4.cpu] halted due to debug-request, current mode: Thread
 xPSR: 0x41000000 pc: 0x00004190 msp: 0x20000f98
 Info : New GDB Connection: 1, Target psoc4.cpu, state: halted
 Warn : No RTOS could be auto-detected!
 Info : SWD DPIDR 0x0bc11477
 ** Attempting to soft-acquire the chip in Test Mode...
 ** psoc4.cpu: Ran after reset and before halt...
-[psoc4.cpu] halted due to debug-request, current mode: Thread 
+[psoc4.cpu] halted due to debug-request, current mode: Thread
 xPSR: 0x81000000 pc: 0x00004bc8 msp: 0x20000fc8
 Info : psoc4.cpu: bkpt @0x000003FD, issuing SYSRESETREQ
-[psoc4.cpu] halted due to debug-request, current mode: Thread 
+[psoc4.cpu] halted due to debug-request, current mode: Thread
 xPSR: 0x61000000 pc: 0x000003fc msp: 0x20001000
 Info : SWD DPIDR 0x0bc11477
 ** Attempting to soft-acquire the chip in Test Mode...
 ** psoc4.cpu: Ran after reset and before halt...
-[psoc4.cpu] halted due to debug-request, current mode: Thread 
+[psoc4.cpu] halted due to debug-request, current mode: Thread
 xPSR: 0x61000000 pc: 0x00001be4 msp: 0x20000f48
 Info : psoc4.cpu: bkpt @0x000003FD, issuing SYSRESETREQ
-[psoc4.cpu] halted due to debug-request, current mode: Thread 
+[psoc4.cpu] halted due to debug-request, current mode: Thread
 xPSR: 0x61000000 pc: 0x000003fc msp: 0x20001000
 ** Programming Started **
 auto erase enabled
@@ -96,5 +99,4 @@ verified 21232 bytes in 0.366760s (56.534 KiB/s)
 Info : SWD DPIDR 0x0bc11477
 ** Attempting to soft-acquire the chip in Test Mode...
 ** psoc4.cpu: Ran after reset and before halt...
-[psoc4.cpu] halted due to debug-request, current mode: Thread 
-```
+[psoc4.cpu] halted due to debug-request, current mode: Thread
