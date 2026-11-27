@@ -7,3 +7,5 @@ description: TCL T20 Pro openwrt 刷机
 ![实物照片](IMG_2080.jpeg)
 
 ![openwrt终端](image.png)
+
+移植已完成，详细请点[这里](https://github.com/wjjsn/openwrt-t20pro)
